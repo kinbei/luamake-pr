@@ -1,6 +1,3 @@
-local dontgenerate = ...
-local sim = require 'simulator'
-sim:dofile(WORKDIR / "make.lua")
-if not dontgenerate then
-    sim:finish()
-end
+local action = require "action"
+action.init()
+action.generate()
